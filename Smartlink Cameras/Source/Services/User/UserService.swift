@@ -43,7 +43,6 @@ final class UserService: UserServiceProtocol {
         return UserDefaults.standard.rx
             .observe(Bool.self, UserDefaultKeys.isLoggedIn.rawValue)
             .map({ $0 ?? false })
-//            .do(onNext: { value in print("Is Logged In Test: \(value)") })
     }
     
     
@@ -51,10 +50,13 @@ final class UserService: UserServiceProtocol {
         self.apiService = apiService
         
         authenticationState = BehaviorRelay<AuthenticationState>(value: .signedOut)
+        commonInit()
     }
     
     fileprivate func commonInit() {
-        
+        loggedInStream()
+            .subscribe()
+            .disposed(by: disposeBag)
     }
     
     func login() {

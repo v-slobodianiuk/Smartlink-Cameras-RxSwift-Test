@@ -24,9 +24,13 @@ final class LoginCoordinator: BaseCoordinator<Void> {
     override func start() -> Observable<Void> {
         let viewController = LoginViewController()
         
+        let attachableViewModel: Attachable<LoginViewModel> = .detached(dependencies)
+        let viewModel = viewController.attach(wrapper: attachableViewModel)
+        
         window.setRootViewController(viewController)
         
-        return Observable.never()
+        return viewModel.loginResult
+            .take(1)
     }
     
     deinit {

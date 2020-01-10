@@ -22,7 +22,7 @@ final class MainCoordinator: BaseCoordinator<Void> {
     }
     
     override func start() -> Observable<Void> {
-        let viewController = LoginViewController()
+        let viewController = MainTabBarController()
         
         window.setRootViewController(viewController)
         

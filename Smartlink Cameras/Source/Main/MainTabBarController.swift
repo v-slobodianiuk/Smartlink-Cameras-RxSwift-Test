@@ -80,6 +80,9 @@ extension MainTabBarController {
             tabBar.shadowImage = UIImage()
         }
         
+        tabBar.tintColor = .lightGray
+        tabBar.unselectedItemTintColor = .black
+        
         viewControllers = TabBarItems.allCases().map({ item -> UINavigationController in
             let newNC = UINavigationController()
             newNC.tabBarItem = UITabBarItem(title: nil,
