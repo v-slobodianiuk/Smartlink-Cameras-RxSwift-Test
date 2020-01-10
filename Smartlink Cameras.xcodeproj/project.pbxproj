@@ -16,6 +16,11 @@
 		FB0E4C3123C8CA90003E70B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB0E4C2F23C8CA90003E70B0 /* LaunchScreen.storyboard */; };
 		FB0E4C3C23C8CA90003E70B0 /* Smartlink_CamerasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0E4C3B23C8CA90003E70B0 /* Smartlink_CamerasTests.swift */; };
 		FB0E4C4723C8CA90003E70B0 /* Smartlink_CamerasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0E4C4623C8CA90003E70B0 /* Smartlink_CamerasUITests.swift */; };
+		FBB4293E23C8CE51002EF467 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBB4293923C8CE51002EF467 /* RxSwift.framework */; };
+		FBB4294023C8CE51002EF467 /* RxDataSources.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBB4293A23C8CE51002EF467 /* RxDataSources.framework */; };
+		FBB4294223C8CE51002EF467 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBB4293B23C8CE51002EF467 /* RxCocoa.framework */; };
+		FBB4294423C8CE51002EF467 /* Differentiator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBB4293C23C8CE51002EF467 /* Differentiator.framework */; };
+		FBB4294623C8CE51002EF467 /* RxRelay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBB4293D23C8CE51002EF467 /* RxRelay.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,11 @@
 		FB0E4C4223C8CA90003E70B0 /* Smartlink CamerasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Smartlink CamerasUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB0E4C4623C8CA90003E70B0 /* Smartlink_CamerasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Smartlink_CamerasUITests.swift; sourceTree = "<group>"; };
 		FB0E4C4823C8CA90003E70B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBB4293923C8CE51002EF467 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		FBB4293A23C8CE51002EF467 /* RxDataSources.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxDataSources.framework; path = Carthage/Build/iOS/RxDataSources.framework; sourceTree = "<group>"; };
+		FBB4293B23C8CE51002EF467 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		FBB4293C23C8CE51002EF467 /* Differentiator.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Differentiator.framework; path = Carthage/Build/iOS/Differentiator.framework; sourceTree = "<group>"; };
+		FBB4293D23C8CE51002EF467 /* RxRelay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxRelay.framework; path = Carthage/Build/iOS/RxRelay.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBB4294223C8CE51002EF467 /* RxCocoa.framework in Frameworks */,
+				FBB4293E23C8CE51002EF467 /* RxSwift.framework in Frameworks */,
+				FBB4294423C8CE51002EF467 /* Differentiator.framework in Frameworks */,
+				FBB4294023C8CE51002EF467 /* RxDataSources.framework in Frameworks */,
+				FBB4294623C8CE51002EF467 /* RxRelay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +100,7 @@
 				FB0E4C3A23C8CA90003E70B0 /* Smartlink CamerasTests */,
 				FB0E4C4523C8CA90003E70B0 /* Smartlink CamerasUITests */,
 				FB0E4C1F23C8CA8D003E70B0 /* Products */,
+				FBB4293823C8CE51002EF467 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,8 +117,7 @@
 		FB0E4C2023C8CA8D003E70B0 /* Smartlink Cameras */ = {
 			isa = PBXGroup;
 			children = (
-				FB0E4C2123C8CA8D003E70B0 /* AppDelegate.swift */,
-				FB0E4C2323C8CA8D003E70B0 /* SceneDelegate.swift */,
+				FBB4294A23C8CEF8002EF467 /* Source */,
 				FB0E4C2823C8CA8D003E70B0 /* ContentView.swift */,
 				FB0E4C2A23C8CA90003E70B0 /* Assets.xcassets */,
 				FB0E4C2F23C8CA90003E70B0 /* LaunchScreen.storyboard */,
@@ -139,6 +154,35 @@
 			path = "Smartlink CamerasUITests";
 			sourceTree = "<group>";
 		};
+		FBB4293823C8CE51002EF467 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FBB4293C23C8CE51002EF467 /* Differentiator.framework */,
+				FBB4293B23C8CE51002EF467 /* RxCocoa.framework */,
+				FBB4293A23C8CE51002EF467 /* RxDataSources.framework */,
+				FBB4293D23C8CE51002EF467 /* RxRelay.framework */,
+				FBB4293923C8CE51002EF467 /* RxSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FBB4294A23C8CEF8002EF467 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				FBB4294B23C8CF04002EF467 /* Application */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		FBB4294B23C8CF04002EF467 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				FB0E4C2123C8CA8D003E70B0 /* AppDelegate.swift */,
+				FB0E4C2323C8CA8D003E70B0 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -149,6 +193,7 @@
 				FB0E4C1A23C8CA8D003E70B0 /* Sources */,
 				FB0E4C1B23C8CA8D003E70B0 /* Frameworks */,
 				FB0E4C1C23C8CA8D003E70B0 /* Resources */,
+				FBB4294923C8CE77002EF467 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -264,6 +309,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FBB4294923C8CE77002EF467 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Differentiator.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxDataSources.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxRelay.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Differentiator.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxCocoa.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxDataSources.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxRelay.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FB0E4C1A23C8CA8D003E70B0 /* Sources */ = {
@@ -442,6 +517,10 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Smartlink Cameras/Preview Content\"";
 				DEVELOPMENT_TEAM = 3JLG8N5656;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Smartlink Cameras/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,7 +529,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.securenettech.Smartlink-Cameras";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -462,6 +541,10 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Smartlink Cameras/Preview Content\"";
 				DEVELOPMENT_TEAM = 3JLG8N5656;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Smartlink Cameras/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -470,7 +553,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.securenettech.Smartlink-Cameras";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
