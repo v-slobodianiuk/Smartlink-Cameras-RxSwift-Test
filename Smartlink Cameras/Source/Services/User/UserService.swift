@@ -1,0 +1,84 @@
+//
+//  UserService.swift
+//  Smartlink Cameras
+//
+//  Created by SecureNet Mobile Team on 1/10/20.
+//  Copyright © 2020 SecureNet Technologies, LLC. All rights reserved.
+//
+
+import Foundation
+import RxRelay
+import RxSwift
+
+enum AuthenticationState {
+    case signedIn
+    case signedOut
+}
+
+protocol UserServiceProtocol {
+    // Just an example
+    
+    // MARK: - Private variables
+    var apiService: APIServiceProtocol! { get }
+    var authenticationState: BehaviorRelay<AuthenticationState> { get }
+    
+    // MARK: - Public variables
+    var isLoggedIn: Observable<Bool> { get }
+    
+    // MARK: - Public methods
+    func login()
+    func logout()
+    // ...
+}
+
+final class UserService: UserServiceProtocol {
+    
+    // MARK: - Private variables
+    fileprivate(set) var apiService: APIServiceProtocol!
+    fileprivate(set) var authenticationState: BehaviorRelay<AuthenticationState>
+    fileprivate let disposeBag = DisposeBag()
+    
+    // MARK: - Public variables
+    var isLoggedIn: Observable<Bool> {
+        return UserDefaults.standard.rx
+            .observe(Bool.self, UserDefaultKeys.isLoggedIn.rawValue)
+            .map({ $0 ?? false })
+//            .do(onNext: { value in print("Is Logged In Test: \(value)") })
+    }
+    
+    
+    init(apiService: APIServiceProtocol) {
+        self.apiService = apiService
+        
+        authenticationState = BehaviorRelay<AuthenticationState>(value: .signedOut)
+    }
+    
+    fileprivate func commonInit() {
+        
+    }
+    
+    func login() {
+        // Do API and other logic of course
+        UserDefaults.standard.setLoggedIn(value: true)
+    }
+    
+    func logout() {
+        // Do API and other logic of course
+        UserDefaults.standard.setLoggedIn(value: false)
+    }
+    
+    deinit {
+        apiService = nil
+    }
+    
+}
+
+extension UserService {
+    
+    fileprivate func loggedInStream() -> Observable<Void> {
+        return isLoggedIn
+            .do(onNext: { [weak self] value in self?.authenticationState.accept(value ? .signedIn : .signedOut) })
+            .mapToVoid()
+    }
+    
+}
