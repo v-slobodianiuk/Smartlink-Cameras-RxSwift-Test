@@ -10,7 +10,6 @@
 		FB0E4C2223C8CA8D003E70B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0E4C2123C8CA8D003E70B0 /* AppDelegate.swift */; };
 		FB0E4C2423C8CA8D003E70B0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0E4C2323C8CA8D003E70B0 /* SceneDelegate.swift */; };
 		FB0E4C2723C8CA8D003E70B0 /* Smartlink_Cameras.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FB0E4C2523C8CA8D003E70B0 /* Smartlink_Cameras.xcdatamodeld */; };
-		FB0E4C2923C8CA8D003E70B0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0E4C2823C8CA8D003E70B0 /* ContentView.swift */; };
 		FB0E4C2B23C8CA90003E70B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB0E4C2A23C8CA90003E70B0 /* Assets.xcassets */; };
 		FB0E4C2E23C8CA90003E70B0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB0E4C2D23C8CA90003E70B0 /* Preview Assets.xcassets */; };
 		FB0E4C3123C8CA90003E70B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB0E4C2F23C8CA90003E70B0 /* LaunchScreen.storyboard */; };
@@ -58,7 +57,6 @@
 		FB0E4C2123C8CA8D003E70B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB0E4C2323C8CA8D003E70B0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FB0E4C2623C8CA8D003E70B0 /* Smartlink_Cameras.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Smartlink_Cameras.xcdatamodel; sourceTree = "<group>"; };
-		FB0E4C2823C8CA8D003E70B0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FB0E4C2A23C8CA90003E70B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB0E4C2D23C8CA90003E70B0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FB0E4C3023C8CA90003E70B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -144,7 +142,6 @@
 			isa = PBXGroup;
 			children = (
 				FBB4294A23C8CEF8002EF467 /* Source */,
-				FB0E4C2823C8CA8D003E70B0 /* ContentView.swift */,
 				FB0E4C2A23C8CA90003E70B0 /* Assets.xcassets */,
 				FB0E4C2F23C8CA90003E70B0 /* LaunchScreen.storyboard */,
 				FB0E4C3223C8CA90003E70B0 /* Info.plist */,
@@ -458,7 +455,6 @@
 				FBB4295923C8D455002EF467 /* UserService.swift in Sources */,
 				FB0E4C2723C8CA8D003E70B0 /* Smartlink_Cameras.xcdatamodeld in Sources */,
 				FBB4296B23C8D8F7002EF467 /* MainCoordinator.swift in Sources */,
-				FB0E4C2923C8CA8D003E70B0 /* ContentView.swift in Sources */,
 				FBB4295223C8D229002EF467 /* ActivityIndicator.swift in Sources */,
 				FBB4295D23C8D554002EF467 /* APIService.swift in Sources */,
 				FB0E4C2423C8CA8D003E70B0 /* SceneDelegate.swift in Sources */,
