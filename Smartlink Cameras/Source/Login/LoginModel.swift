@@ -7,3 +7,20 @@
 //
 
 import Foundation
+
+struct LoginModel: Codable {
+    let server: Server
+    let platform: Platform
+}
+
+struct Platform: Codable {
+    let baseURL: String
+}
+
+struct Server: Codable {
+    let partner, environment: String
+}
+
+struct LoginPostModel: Codable {
+    let method, username, environment: String
+}

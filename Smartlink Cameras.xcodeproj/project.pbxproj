@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D5307A7024EF0A2600336AD5 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5307A6F24EF0A2600336AD5 /* LoginModel.swift */; };
+		D5307A7224EF4C0200336AD5 /* JsonService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5307A7124EF4C0200336AD5 /* JsonService.swift */; };
 		FB0E4C2223C8CA8D003E70B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0E4C2123C8CA8D003E70B0 /* AppDelegate.swift */; };
 		FB0E4C2423C8CA8D003E70B0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0E4C2323C8CA8D003E70B0 /* SceneDelegate.swift */; };
 		FB0E4C2723C8CA8D003E70B0 /* Smartlink_Cameras.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FB0E4C2523C8CA8D003E70B0 /* Smartlink_Cameras.xcdatamodeld */; };
@@ -55,6 +57,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D5307A6F24EF0A2600336AD5 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		D5307A7124EF4C0200336AD5 /* JsonService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonService.swift; sourceTree = "<group>"; };
 		FB0E4C1E23C8CA8D003E70B0 /* Smartlink Cameras.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smartlink Cameras.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB0E4C2123C8CA8D003E70B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB0E4C2323C8CA8D003E70B0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -121,6 +125,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D5307A7324EFE47800336AD5 /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				D5307A7124EF4C0200336AD5 /* JsonService.swift */,
+			);
+			path = Json;
+			sourceTree = "<group>";
+		};
 		FB0E4C1523C8CA8D003E70B0 = {
 			isa = PBXGroup;
 			children = (
@@ -247,6 +259,7 @@
 		FBB4295723C8D416002EF467 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				D5307A7324EFE47800336AD5 /* Json */,
 				FBB4295B23C8D541002EF467 /* API */,
 				FBB4295A23C8D537002EF467 /* User */,
 			);
@@ -285,6 +298,7 @@
 				FBB4296623C8D833002EF467 /* LoginCoordinator.swift */,
 				FBB4296823C8D89C002EF467 /* LoginViewController.swift */,
 				FBB4297123C8DEFA002EF467 /* LoginViewModel.swift */,
+				D5307A6F24EF0A2600336AD5 /* LoginModel.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -459,6 +473,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5307A7024EF0A2600336AD5 /* LoginModel.swift in Sources */,
 				FBB4296423C8D684002EF467 /* UserDefaults+Extensions.swift in Sources */,
 				FBB4295123C8D229002EF467 /* BaseCoordinator.swift in Sources */,
 				FBB4296723C8D833002EF467 /* LoginCoordinator.swift in Sources */,
@@ -473,6 +488,7 @@
 				FBB4297023C8DEE4002EF467 /* ViewModelType.swift in Sources */,
 				FBB4295223C8D229002EF467 /* ActivityIndicator.swift in Sources */,
 				FBB4295D23C8D554002EF467 /* APIService.swift in Sources */,
+				D5307A7224EF4C0200336AD5 /* JsonService.swift in Sources */,
 				FB0E4C2423C8CA8D003E70B0 /* SceneDelegate.swift in Sources */,
 				FBB4295623C8D2FE002EF467 /* AppDependency.swift in Sources */,
 				FBB4295423C8D280002EF467 /* AppCoordinator.swift in Sources */,
